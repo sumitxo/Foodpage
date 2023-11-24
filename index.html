@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul id="nav">
+          <li>Home</li>
+          <li>Order</li>
+          <li>Food</li>
+          <li>Restaurant</li>
+          <li>Testimonials</li>
+          <li>Contact Us</li>
+        </ul>
+        <div class="nav-icon">
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+      </div>
+    </nav>
+
+    <div id="wrapper">
+      <div class="container">
+        <img class="image" src="/IMG/IMG-20231122-WA0073.jpg" />
+      </div>
+    </div>
+
+    <div id="para">
+      <h1 class="lorem">LOREM IPSUM</h1>
+      <br />
+      <p>
+        Lorem Ipsum has been the industry's standard dummy text ever since the
+        1500s, when an unknown printer took a galley of type and scrambled it to
+        make a type specimen book.
+      </p>
+    </div>
+
+    <div class="container">
+      <h1 class="heading">Order Now</h1>
+      <div class="blocks">
+        <div class="items">
+          <div class="item">
+            <img src="/IMG/IMG-20231122-WA0076.jpg" alt="" />
+            <div class="head">
+              <h2>BURGER</h2>
+            </div>
+            <div class="text">
+              Lorem Ipsum has been the industry's standard dummy text
+            </div>
+          </div>
+          <div class="item">
+            <img src="/IMG/IMG-20231122-WA0074.jpg" alt="" />
+            <div class="head">
+              <h2>PIZZA</h2>
+            </div>
+            <div class="text">
+              Lorem Ipsum has been the industry's standard dummy text
+            </div>
+          </div>
+          <div class="item">
+            <img src="/IMG/IMG-20231122-WA0075.jpg" alt="" />
+            <div class="head">
+              <h2>PASTA</h2>
+            </div>
+            <div class="text">
+              Lorem Ipsum has been the industry's standard dummy text
+            </div>
+          </div>
+        </div>
+      </div>
+      <button>Order</button>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var navbar = document.getElementById('nav');
+            navbar.classList.toggle('show');
+        }
+    </script>
+  </body>
+</html>
